@@ -1,0 +1,141 @@
+html, body, div, h1, p, span {
+  margin: 0;
+  padding: 0;
+}
+body {
+  color: #336699;
+  font-family: Arial, san-serif;
+  width: 100%;
+}
+header {
+  border-bottom: #7d97ad solid 3px;
+  display: flex;
+  margin-bottom: 20px;
+  padding: 20px 0;
+  width:100%;
+}
+h1 {
+  font-weight: normal;
+  font-size: 36px;
+  text-transform: uppercase;
+}
+h2 {
+  color:#7d97ad;
+  font-size: 28px;
+  font-weight: normal;
+  margin-bottom: 10px;
+}
+
+#logoContainer {
+  width:50%;
+}
+#nameContainer {
+  text-align: right;
+  width: 50%;
+}
+#mainImage {
+  width:100%;
+}
+.logoimg {
+  display:block;
+  margin:0;
+}
+.subtitle, .featuredTitle {
+  text-transform: uppercase;
+}
+.subtitle {
+  font-size:20px;
+  padding-top: 10px;
+}
+
+.name {
+	font-family: san-serif;
+	padding-top:10px;
+	font-size: 40px;
+}
+
+.imageContainer {
+  margin-bottom: 18px;
+}
+.colorImage {
+  width:100%;
+}
+.featured {
+  text-align: center;
+  width:100%;
+}
+
+.featured img {
+  width:100%;
+}
+.featuredWorkTitle {
+  font-size:20px;
+}
+.featuredURL {
+  font-size:12px;
+}
+
+/*Media Queries*/
+@media screen and (max-width:767px) {
+  h1 {
+    font-size: 2em;
+  }
+  h1, .subtitle {
+    text-align: left;
+  }
+  header {
+    flex-wrap: wrap;
+  }
+  span { display: block;}
+  #logoContainer {
+    margin-bottom: 20px;
+    width: 100% !important;
+  }
+  .logoimg {
+    margin: auto 5%;
+  }
+  #nameContainer {
+    width: 100% !important;
+  }
+  #featuredWork {
+    width: 100%;
+  }
+  .featured {
+    width:100%;
+  }
+  .featured img {
+  }
+  .featuredText{
+    margin: 5px 0 30px 0;
+  }
+  .featuredTitle {
+    font-size:1.5em;
+  }
+  .featuredURL {
+    font-size:1em;
+  }
+}
+/* First breakpoint */
+@media screen and (min-width:750px) {
+#featuredWork {
+    display: flex;
+    width:100%;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+.featured {
+    width:20%;
+  }
+.featuredWorkTitle {
+    font-size:1.5em;
+  }
+}
+/* Second breakpoint */
+@media screen and (min-width:960px) {
+   header, section {
+    width: 100%;
+    max-width:960px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
